@@ -11,3 +11,33 @@ Funktioner  [Not Started]
 Design  [Not started]
 <br>
 Content [in progress]
+
+<h2>Mockup</h2>
+<b>Användare</b>
+Roller
+Inloggning
+Registrering
+
+<b>Innehållshantering</b>
+Taggar
+Related content
+Kategorier/Typ
+Sökfunktion
+Filter
+Wizard
+
+<b>Community</b>
+Bloggar med kommentarfunktion
+
+<b>Mockup</b>
+Feedback
+
+<b>Design</b>
+Nerskalad bootstrap
+Platt design
+Bildsnål
+Logga
+
+<b>Offline</b>
+Print
+Nersparning
