@@ -1,4 +1,15 @@
 Mockup::Application.routes.draw do
+  get "log_in" => "sessions#new"
+  post "log_in" => "sessions#create"
+  get "log_out" => "sessions#destroy"
+
+  get "register" => "users#new"
+  post "register" => "users#create"
+
+  resources :users
+
+  root 'sessions#new'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
