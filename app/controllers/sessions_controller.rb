@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
   	if user
   		session[:user_id] = user.id
 
-  		redirect_to root_url, :notice => "Logged in"
+  		redirect_to articles_path, :notice => "Logged in"
   	else
 
   		redirect_to root_url, :notice => "Error"

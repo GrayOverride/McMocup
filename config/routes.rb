@@ -6,7 +6,7 @@ Mockup::Application.routes.draw do
   get "register" => "users#new"
   post "register" => "users#create"
 
-  resources :users
+  resources :users, :articles
 
   root 'sessions#new'
 
