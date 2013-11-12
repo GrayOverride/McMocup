@@ -11,77 +11,100 @@
  *= require_self
  *= require_tree .
  */
-
- .content{
- 	padding-top:20px;
- 	background:white;
+ .search{
+ 	background:#e9573f!important;
  }
 
- .nav{  text-decoration: none;
+ .stage{
+ 	display: block;
+ 	margin:5px;
+ 	background:lightgray;
+ }
+
+ .content{
+ 	display: block;
+ 	padding:20px;
+ 	background:white;
+ 	margin-top: 5px;
+ }
+
+ .nav{
+ 	text-decoration: none;
  	line-height: 40px;
  	color: #fff;
  	background:#fc6e51; 
- 	padding:10px;
  }
 
  .sidebar{
  	background:#e8e8e8;
- 	padding:5px;}
+ 	margin:5px;}
 
- 	.footnote{
- 		background:#333333;
- 	}
+ .footnote{
+ 	background:#333333;
+ }
 
- 	.btn{
- 	background:#4fc1e9;
+ .btn{
  	float:right;
 	padding: 0 20px;
 	text-decoration: none;
  	line-height: 40px;
  	color: #fff;
- 	}
+ }
 
- 	.btn a {color: #fff;}
+ .btn a{
+ 	color: #fff;
+ }
 
- 	* {
- 		margin: 0;
- 	}
- 	html, body {
- 		height: 100%;
- 	}
- 	.wrapper {
- 		min-height: 100%;
- 		height: auto !important;
- 		height: 100%;
- 		margin: 0 auto -65px;
- 	}
- 	.footer, .push {
- 		height: 65px; }
+ *{
+ 	margin: 0;
+ }
+ 
+ html, body{
+ 	height: 100%;
+ }
+
+ .wrapper{
+ 	background:#e8e8e8;
+ 	min-height: 100%;
+ 	height: auto !important;
+ 	height: 100%;
+ 	margin: 0 auto -65px;
+ }
+
+ .footer, .push{
+ 	height: 65px; 
+ }
 
 
- 		/*Navbar dropdowns*/
-
-
- 		.navigation {
- 			list-style: none;
- 			padding: 0;
- 			margin: 0;
-  /*
-  box-shadow:  0px -2px 3px -1px rgba(0, 0, 0, 1);
-  */
+.sidelabel{
+	background: #fc6e51; 
+	padding:10px;
 }
 
-.navigation li {
+.sidebody{
+	padding:10px;
+	background: white ;
+}
+
+
+ /*Navbar dropdowns*/
+.navigation{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.navigation li{
 	float: left;
 
 }
 
-.navigation li:hover {
+.navigation li:hover{
 	background: #e9573f;
 }
 
 
-.navigation li a {
+.navigation li a{
 	display: block;
 	padding: 0 20px;
 	text-decoration: none;
@@ -89,7 +112,7 @@
  	color: #fff;
 }
 
-.navigation ul {
+.navigation ul{
 	display: none;
 	position: absolute;
 	list-style: none;
@@ -97,17 +120,18 @@
 	overflow: hidden;
 }
 
-.navigation ul li {
+.navigation ul li{
 	float: none;
 }
 
-.navigation li:hover > ul {
+.navigation li:hover > ul{
 	display: block;
 	background: #e9573f;
 	border-top: 0;
 }
 
 
-.navigation li li a:hover {
+.navigation li li a:hover{
 	background: #000;
 }
+
