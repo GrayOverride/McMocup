@@ -1,14 +1,67 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Mockup</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
+	<title>Mockup</title>
+	<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+	<%= csrf_meta_tags %>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+	<div class="wrapper">
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<div class="span12 nav">
+					<div class="span2">logo</div>
+					<div class="span5">
+						<ul class="navigation">
+							<li><a href="" title="Home">Home</a></li>
+							<li><a href="" title="About us">About us</a></li>
+							<li><a href="" title="DIY">DIY</a>
+								<ul>
+									<li><a href="" title="Guides">Guides</a></li>
+									<li><a href="" title="Step-by-step">Step-by-step</a></li>
+									<li><a href="" title="FAQ">FAQ</a></li>
+									<li><a href="" title="Submit">Submit</a></li>
+								</ul>
+							</li>
+							<li><a href="" title="Contact">Contact</a></li>
+							<div class="clear"></div>
+						</ul>
+					</div>
+					<div class="span2 offset3">
+						<div class="btn">
+							<% if current_user %>
+							<%= link_to 'Logout', log_out_path%>
+							<% else %>
+							<%= link_to 'Login', log_in_path%>
+							<% end %>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-<%= yield %>
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<div class="span2 hidden-phone">
+					<div class="sidebar">
 
+					</div>
+				</div>
+				<div class="span8 content">
+					<%= yield %>
+				</div>
+				<div class="span2 hidden-phone">
+
+				</div>
+			</div>
+		</div>
+		<div class="push"></div>
+	</div>
+	<div class="footer footnote">
+		<p>Copyright (c) 2008</p>
+	</div>
 </body>
 </html>
+
