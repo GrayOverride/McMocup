@@ -12,7 +12,15 @@
 		<div class="container-fluid">
 			<div class="row-fluid">
 				<div id="startelement-head" class="span12 nav">
-					<div class="span5"></div>
+					<div class="span5">
+						<div class="btn" style="float:left; background:#4fc1e9;">
+							<% if current_user %>
+							
+							<% else %>
+							<%= link_to 'Register', register_path%>
+							<% end %>
+						</div>
+					</div>
 					<div id="starlogo" class="span2"><h1>Sunnyside</h1></div>
 					<div class="span5">
 						<div class="btn" style="background:#4fc1e9;">
@@ -40,7 +48,7 @@
 			</div>
 	</div>
 	<div class="row-fluid">
-		<div class="span12 content">
+		<div class="span12 content scont">
 			<%= yield %>
 		</div>
 	</div>

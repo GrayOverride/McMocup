@@ -18,6 +18,7 @@
  .stage{
  	display: block;
  	margin:5px;
+ 	padding:5px;
  	background:lightgray;
  }
 
@@ -40,6 +41,7 @@
  	margin:5px;}
 
  .footnote{
+ 	padding-right: 10px;
  	color: lightgray;
  	text-align: right;
  	background:#333333;
