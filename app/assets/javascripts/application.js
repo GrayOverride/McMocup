@@ -14,3 +14,10 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+function showDiv() {
+   document.getElementById('searchDiv').style.display = "block";
+}
+
+function hideDiv() {
+   document.getElementById('searchDiv').style.display = "none";
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mockup</title>
+	<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+	<%= csrf_meta_tags %>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<div id="startelement-head" class="span12 nav">
+					<div class="span5">
+						<div class="btn" style="float:left; background:#4fc1e9;">
+							<% if current_user %>
+							
+							<% else %>
+							<%= link_to 'Register', register_path%>
+							<% end %>
+						</div>
+					</div>
+					<div id="starlogo" class="span2"><h1>Sunnyside</h1></div>
+					<div class="span5">
+						<div class="btn" style="background:#4fc1e9;">
+							<% if current_user %>
+							<%= link_to 'Logout', log_out_path%>
+							<% else %>
+							<%= link_to 'Login', log_in_path%>
+							<% end %>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="startelement-body" class="row-fluid">
+				<div class="span3"></div>
+				<div class="span2">
+					<div class="navdot"></div>
+				</div>
+				<div class="span2">
+					<div class="navdot"></div>
+				</div>
+				<div class="span2">
+					<div class="navdot"></div>
+				</div>
+				<div class="span3"></div>
+			</div>
+	</div>
+	<div class="row-fluid">
+		<div class="span12 content scont">
+			<%= yield %>
+		</div>
+	</div>
+</div>
+<div class="push"></div>
+</div>
+<div class="footer footnote">
+	<p>Copyright (c) 2013</p>
+</div>
+</body>
+</html>
+

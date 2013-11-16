@@ -1,6 +1,7 @@
 class ArticlesController < ApplicationController
   before_filter :authenticate
   
+  
   def index
     @articles = Article.where("user_id = ?", current_user.id)
   end
