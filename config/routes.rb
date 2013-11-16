@@ -1,4 +1,6 @@
 Mockup::Application.routes.draw do
+  get "results" => "search#index"
+  get "search" => "search#search"
   get "log_in" => "sessions#new"
   post "log_in" => "sessions#create"
   get "log_out" => "sessions#destroy"

@@ -11,15 +11,22 @@
  *= require_self
  *= require_tree .
  */
- .search{
- 	background:#e9573f!important;
+
+ #search-div{
+ 	display: none;
+ 	background:#e9573f; 
+ }
+
+ .search-toggle-active{
+ 	background: #e9573f; 
  }
 
  .stage{
  	display: block;
  	margin:5px;
  	padding:5px;
- 	background:lightgray;
+ 	border-left: 1px solid #fc6e51;
+ 	border-right: 1px solid #fc6e51;
  }
 
  .content{
@@ -38,7 +45,8 @@
 
  .sidebar{
  	background:#e8e8e8;
- 	margin:5px;}
+ 	margin:5px;
+ }
 
  .footnote{
  	padding-right: 10px;
@@ -78,7 +86,6 @@
  .footer, .push{
  	height: 65px; 
  }
-
 
 .sidelabel{
 	background: #fc6e51; 
