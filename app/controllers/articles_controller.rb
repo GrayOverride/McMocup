@@ -1,5 +1,6 @@
 class ArticlesController < ApplicationController
   before_filter :authenticate
+  helper_method :sort_column, :sort_direction
   
   
   def index
@@ -48,5 +49,14 @@ class ArticlesController < ApplicationController
     else
       redirect_to articles_path
     end
+  end
+
+private
+  def sort_column
+    Article.column_names.include?(params[:sort]) ? params[:sort] : "title"
+  end
+
+  def sort_direction 
+    %w[asc desc].include?(params[:direction]) ? params[:direction] : "asc"
   end
 end
