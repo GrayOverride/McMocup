@@ -6,10 +6,11 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: mockup_db
+  database: solsida
+  host: johandamm.com
   pool: 5
-  username: postgres
-  password: root
+  username: monty
+  password: massekaffe
   timeout: 5000
 
 # Warning: The database defined as "test" will be erased and

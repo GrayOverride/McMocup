@@ -1,4 +1,5 @@
 Mockup::Application.routes.draw do
+  get "wizard"  => "wizard#index"
   get "results" => "search#index"
   get "search" => "search#search"
   get "log_in" => "sessions#new"
