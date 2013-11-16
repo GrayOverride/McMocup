@@ -13,9 +13,12 @@
  */
 
  #search-div{
+ 	padding-top:10px;
  	display: none;
  	background:#e9573f; 
  }
+
+
 
  .search-toggle-active{
  	background: #e9573f; 
@@ -56,6 +59,8 @@
  }
 
  .btn{
+ 	background:#4fc1e9;
+ 	cursor:pointer;
  	float:right;
 	padding: 0 20px;
 	text-decoration: none;
@@ -66,6 +71,14 @@
  .btn a{
  	color: #fff;
  }
+
+ .ssubmit{
+	border:5px solid #4fc1e9;
+	color:white;
+	padding: 0 20px;
+	background:#4fc1e9;
+	cursor:pointer;
+}
 
  *{
  	margin: 0;
@@ -201,4 +214,9 @@ only screen and (max-width: 760px),
 		border: none; 
 		position: relative;
 	}
+}
+
+#search-bar{
+	margin:auto;
+	padding-left:20px;
 }

@@ -15,14 +15,14 @@
 					<div class="span2 offset1">logo</div>
 					<div class="span5">
 						<ul class="navigation">
-							<li><a href="" title="Home">Home</a></li>
-							<li><a href="" title="About us">About us</a></li>
-							<li><a href="" title="DIY">DIY</a>
+							<li><a href="">Home</a></li>
+							<li><a href="">About us</a></li>
+							<li><a href="">DIY</a>
 								<ul>
-									<li><a href="" title="Guides">Guides</a></li>
-									<li><a href="" title="Step-by-step">Step-by-step</a></li>
-									<li><a href="" title="FAQ">FAQ</a></li>
-									<li><a href="" title="Submit">Submit</a></li>
+									<li><a href="">Guides</a></li>
+									<li><a href="">Step-by-step</a></li>
+									<li><a href="">FAQ</a></li>
+									<li><a href="">Submit</a></li>
 								</ul>
 							</li>
 							<li><a id="search-toggle">Search</a></li>
@@ -30,13 +30,11 @@
 						</ul>
 					</div>
 					<div class="span1 offset3">
-						<div class="btn" style="background:#4fc1e9;">
 							<% if current_user %>
-							<%= link_to 'Logout', log_out_path%>
+							<%= link_to 'Logout', log_out_path, :class=>"btn"%>
 							<% else %>
-							<%= link_to 'Login', log_in_path%>
+							<%= link_to 'Login', log_in_path, :class=>"btn"%>
 							<% end %>
-						</div>
 					</div>
 				</div>
 			</div>
@@ -48,7 +46,7 @@
 					    <%= select_tag "type", '<option value="">Type</option><option value="DIY">Do-It-Yourself</option><option value="Commercial">Commercial</option><option value="Research">Research</option>'.html_safe  %>
 					    <%= select_tag "method", '<option value="">Method</option><option value="Drying">Drying</option><option value="Steaming/Boiling">Steaming/Boiling</option><option value="Heating">Heating</option><option value="Cooling">Cooling</option><option value="Electricity">Electricity</option>'.html_safe  %>
 					    <%= select_tag "produce", '<option value="">Produce</option><option value="Metalwork">Metalwork</option><option value="Agriculture">Agriculture</option><option value="Food processing">Food Processing</option><option value="Textile">Textile</option><option value="Leather">Leather</option><option value="Salt">Salt</option><option value="Tourism">Tourism</option>'.html_safe  %>
-					    <%= submit_tag "Search" %>
+					    <%= submit_tag "Go", :class=>"ssubmit" %>
 					<% end %>
 				</div>
 				<div class="span1"></div>

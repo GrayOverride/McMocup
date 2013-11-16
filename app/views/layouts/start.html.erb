@@ -13,23 +13,21 @@
 			<div class="row-fluid">
 				<div id="startelement-head" class="span12 nav">
 					<div class="span5">
-						<div class="btn" style="float:left; background:#4fc1e9;">
+						<div style="float:left;">
 							<% if current_user %>
 							
 							<% else %>
-							<%= link_to 'Register', register_path%>
+							<%= link_to 'Register', register_path, :class=>"btn"%>
 							<% end %>
 						</div>
 					</div>
 					<div id="starlogo" class="span2"><h1>Sunnyside</h1></div>
 					<div class="span5">
-						<div class="btn" style="background:#4fc1e9;">
-							<% if current_user %>
-							<%= link_to 'Logout', log_out_path%>
-							<% else %>
-							<%= link_to 'Login', log_in_path%>
-							<% end %>
-						</div>
+						<% if current_user %>
+						<%= link_to 'Logout', log_out_path, :class=>"btn"%>
+						<% else %>
+						<%= link_to 'Login', log_in_path, :class=>"btn"%>
+						<% end %>
 					</div>
 				</div>
 			</div>
@@ -46,14 +44,14 @@
 				</div>
 				<div class="span3"></div>
 			</div>
-	</div>
-	<div class="row-fluid">
-		<div class="span12 content scont">
-			<%= yield %>
+		</div>
+		<div class="row-fluid">
+			<div class="span12 content scont">
+				<%= yield %>
+			</div>
 		</div>
 	</div>
-</div>
-<div class="push"></div>
+	<div class="push"></div>
 </div>
 <div class="footer footnote">
 	<p>Copyright (c) 2013</p>

@@ -10,11 +10,18 @@
       </ul>
     </div>
   <% end %>
-
+</br>
+<div  id="search-bar" class="nav span12">
     <%= f.text_field :title, :placeholder=>'Title' %>
-    <%= f.text_area :content, :placeholder=>'Content', :class=>'span12' %>
+
     <%= f.select :type, [['Type', nil], ['DIY', 'Do-It-Yourself'], ['Commercial', 'Commercial'], ['Research', 'Research']]  %>
+
     <%= f.select :method, [['Method', nil], ['Drying', 'Drying'], ['Steaming/Boiling', 'Steaming/Boiling'], ['Heating', 'Heating'], ['Cooling', 'Cooling'], ['Electricity', 'Electricity']]  %>
+
     <%= f.select :produce, [['Produce', nil], ['Metalwork', 'Metalwork'], ['Agriculture', 'Agriculture'], ['Food processing', 'Food Processing'], ['Textile', 'Textile'], ['Leather', 'Leather'], ['Salt', 'Salt'], ['Tourism', 'Tourism']]  %>
-    <%= f.submit "Publish" %>
+
+    <%= f.submit "Publish",:class=>"ssubmit" %>
+</div>
+
+    <%= f.text_area :content, :placeholder=>'Content',:style=>"width:100%;" %>
 <% end %>
