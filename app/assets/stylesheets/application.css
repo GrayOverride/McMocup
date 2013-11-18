@@ -18,8 +18,6 @@
  	background:#e9573f; 
  }
 
-
-
  .search-toggle-active{
  	background: #e9573f; 
  }
@@ -47,7 +45,6 @@
  }
 
  .sidebar{
- 	background:#e8e8e8;
  	margin:5px;
  }
 
@@ -103,6 +100,13 @@
 .sidelabel{
 	background: #fc6e51; 
 	padding:10px;
+}
+
+.sidedesc{
+	font-size: smaller;
+	padding: 0 10px;
+	color: #fff;
+	background: #e9573f;
 }
 
 .sidebody{
