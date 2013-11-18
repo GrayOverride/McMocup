@@ -102,6 +102,10 @@
 	padding:10px;
 }
 
+.sidelabel a{
+	color: #333;
+}
+
 .sidedesc{
 	font-size: smaller;
 	padding: 0 10px;
@@ -112,6 +116,10 @@
 .sidebody{
 	padding:10px;
 	background: white ;
+}
+
+.blurb{
+	text-align: center;
 }
 
 

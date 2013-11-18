@@ -1,14 +1,11 @@
-That's a search <br />
-Keyword: <%= @keyword %><br />
-Type: <%= @type %><br />
-Method: <%= @method %><br />
-Produce: <%= @produce %><br />
-
 <h2>Results</h2>
 <table>
 		<% @articles.each do |a| %>
 			<tr>
-				<td><%= a.title %></td>
+				<td>
+					<h3><%= link_to a.title, article_path(a.id) %></h3>
+					<p><%= truncate(a.content, length: 140) %></p>
+				</td>
 			</tr>
 		<% end %>
 </table>

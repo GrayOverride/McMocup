@@ -1,5 +1,6 @@
 class ArticlesController < ApplicationController
-  before_filter :authenticate, :sidebar
+  before_filter :authenticate, :except => [:show]
+  before_filter :sidebar
   helper_method :sort_column, :sort_direction
   
   
