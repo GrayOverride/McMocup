@@ -13,6 +13,7 @@
 <div class="row-fluid">
 	<div class="span12">
 <% if @user.errors.any? %>
+</br>
 	<div>
 			<% for message in @user.errors.full_messages %>
 				<div class="text-error"><%= message %></div></br>

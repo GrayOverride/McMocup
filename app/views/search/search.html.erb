@@ -1,1 +1,14 @@
-That's a search <%= @keyword %>
+That's a search <br />
+Keyword: <%= @keyword %><br />
+Type: <%= @type %><br />
+Method: <%= @method %><br />
+Produce: <%= @produce %><br />
+
+<h2>Results</h2>
+<table>
+		<% @articles.each do |a| %>
+			<tr>
+				<td><%= a.title %></td>
+			</tr>
+		<% end %>
+</table>
