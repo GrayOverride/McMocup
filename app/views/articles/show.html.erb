@@ -1,7 +1,7 @@
 
 
 	<div id="article-head">
-			<p>Jhon Doe</p>
+			<p><%= @article.user.username %></p>
 			<%= @article.created_at.strftime("%d %b. %Y") %>
 		
 		<div id="article-meta">
@@ -17,8 +17,6 @@
 <br/>
 
 <p><%=simple_format @article.content %></p>
-
-<p><%= @article.content %></p>
 
 <% if !@related.empty? %>
 	<table>
