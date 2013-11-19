@@ -7,8 +7,8 @@ development:
   adapter: postgresql
   encoding: unicode
   database: solsida
-  host: johandamm.com
   pool: 5
+  host: johandamm.com
   username: monty
   password: massekaffe
   timeout: 5000

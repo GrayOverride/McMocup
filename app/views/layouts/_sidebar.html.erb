@@ -1,11 +1,14 @@
 <div class="row-fluid">
 	<div class="sidebar span12">
-		<div class="sidelabel"><h3>Text</h3></div>
-		<div class="sidebody"><p> Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p></div>
+		<div class="sidelabel"><h3><%= link_to @new_article.title, article_path(@new_article.id) %></h3></div>
+		<div class="sidedesc"><p><%= @new_article.type + ", " + @new_article.method + ", " + @new_article.produce %></p></div>
+		<div class="sidebody"><p><%= truncate(@new_article.content, length: 140) %></p></div>
 	</div>
 </div>
 <div class="row-fluid">
 	<div class="sidebar span12">
-		<div class="sidelabel"><h3>Text</h3></div>
+		<div class="sidelabel"><h3><%=  link_to @new_com_article.title, article_path(@new_com_article.id) %></h3></div>
+		<div class="sidedesc"><p><%= @new_com_article.type + ", " + @new_com_article.method + ", " + @new_com_article.produce %></p></div>
+		<div class="sidebody"><p><%= truncate(@new_com_article.content, length: 140) %></p></div>
 	</div>
 </div>

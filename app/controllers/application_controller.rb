@@ -5,6 +5,11 @@ class ApplicationController < ActionController::Base
 
 	helper_method :current_user
 
+	def sidebar
+		@new_article = Article.where("type != 'Commercial'").first(:order => 'created_at DESC')
+		@new_com_article = Article.where("type = 'Commercial'").first(:order => 'created_at DESC')
+	end
+
 	private
 	def current_user
 		@current_user ||= User.find(session[:user_id]) if session[:user_id]
