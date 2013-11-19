@@ -11,7 +11,7 @@
     </div>
   <% end %>
 </br>
-<div  id="search-bar" class="nav span12">
+<div  id="form-bar" class="nav span12">
     <%= f.text_field :title, :placeholder=>'Title' %>
 
     <%= f.select :type, [['Type', nil], ['DIY', 'Do-It-Yourself'], ['Commercial', 'Commercial'], ['Research', 'Research']]  %>
@@ -22,6 +22,7 @@
 
     <%= f.submit "Publish",:class=>"ssubmit" %>
 </div>
-
-    <%= f.text_area :content, :placeholder=>'Content',:style=>"width:100%;" %>
+<div id="form-area">
+    <%= f.text_area :content, :placeholder=>'Content', :rows => "30",:style=>"width:100%;" %>
+</div>
 <% end %>

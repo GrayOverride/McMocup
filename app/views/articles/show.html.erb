@@ -1,12 +1,22 @@
+
+
+	<div id="article-head">
+			<p>Jhon Doe</p>
+			<%= @article.created_at.strftime("%d %b. %Y") %>
+		
+		<div id="article-meta">
+			<p>Type: <%= @article.type %></p>
+			<p>Method: <%= @article.method %></p>
+			<p>Produce: <%= @article.produce %></p>
+		</div>
+	</div>
+
+<br/>
 <h1><%= @article.title %></h1>
-<p>
-	<b>Type</b>
-	<%= @article.type %><br />
-	<b>Method</b>
-	<%= @article.method %><br />
-	<b>Produce</b>
-	<%= @article.produce %>
-</p>
+
+<br/>
+
+<p><%=simple_format @article.content %></p>
 
 <p><%= @article.content %></p>
 
@@ -31,3 +41,4 @@
 		</tr>
 	</table>
 <% end %>
+
