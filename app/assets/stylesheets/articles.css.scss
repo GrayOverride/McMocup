@@ -1,3 +1,33 @@
 // Place all the styles related to the articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+#form-bar{
+	margin:auto;
+	padding-left:20px;
+}
+
+#form-area{
+	margin-top:20px;
+	background:red;
+	display:inline-block;
+	width:100%;
+}
+
+
+#article-head{
+width:100%;
+	color:lightgray;
+	float:left;
+	padding-bottom:20px;
+}
+
+#article-head p{
+	display:inline;
+	padding-right:20px;
+}
+
+#article-meta{
+	float:right;
+}

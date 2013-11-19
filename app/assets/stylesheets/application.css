@@ -215,8 +215,3 @@ only screen and (max-width: 760px),
 		position: relative;
 	}
 }
-
-#search-bar{
-	margin:auto;
-	padding-left:20px;
-}
