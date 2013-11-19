@@ -10,6 +10,8 @@ class ArticlesController < ApplicationController
 
   def show
     @article = Article.find(params.require(:id))
+    @related = Article.where("type != 'Commercial' AND method = ? AND produce = ? AND id != ?", @article.method, @article.produce, @article.id).order("updated_at DESC").limit(4)
+    @rel_com = Article.where("type = 'Commercial' AND method = ? AND produce = ? AND id != ?", @article.method, @article.produce, @article.id).offset(rand(Article.count)).first
   end
 
   def new

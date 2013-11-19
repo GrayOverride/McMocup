@@ -9,3 +9,25 @@
 </p>
 
 <p><%= @article.content %></p>
+
+<% if !@related.empty? %>
+	<table>
+		<legend><h3>Related articles</h3></legend>
+		<% @related.each do |article| %>
+			<tr>
+				<td><h3><%= link_to article.title, article %></h3></td>
+				<td><%= article.created_at.strftime("%d %b. %Y") %></td>
+			</tr>
+	 	<% end %>
+	</table>
+<% end %>
+
+<% if @rel_com %>
+	<table>
+		<legend><h3>Related commercial option</h3></legend>
+		<tr>
+			<td><h3><%= link_to @rel_com.title, @rel_com %></h3></td>
+			<td><%= @rel_com.created_at.strftime("%d %b. %Y") %></td>
+		</tr>
+	</table>
+<% end %>
