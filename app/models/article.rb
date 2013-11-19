@@ -1,4 +1,5 @@
 class Article < ActiveRecord::Base
+	belongs_to :user
 	self.inheritance_column = nil
 	validates_presence_of :title, :content, :type, :method, :produce, :user_id
 
