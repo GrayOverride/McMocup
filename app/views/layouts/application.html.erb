@@ -13,10 +13,12 @@
 			<div class="row-fluid">
 				<div class="span12 nav">
 					<div class="span2 offset1">logo</div>
-					<div class="span5">
+					<div class="span6">
 						<ul class="navigation">
 							<li><%= link_to "Home", articles_path %></li>
 							<li><a href="">About us</a></li>
+
+							<li><a href="">Comercial</a></li>
 							<li><a href="">DIY</a>
 								<ul>
 									<li><a href="">Guides</a></li>
@@ -25,11 +27,12 @@
 									<li><a href="">Submit</a></li>
 								</ul>
 							</li>
+							<li><a href="">Research</a></li>
 							<li><a id="search-toggle">Search</a></li>
 							<div class="clear"></div>
 						</ul>
 					</div>
-					<div class="span1 offset3">
+					<div class="span1 offset2">
 							<% if current_user %>
 							<%= link_to 'Logout', log_out_path, :class=>"btn"%>
 							<% else %>

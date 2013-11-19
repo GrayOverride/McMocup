@@ -18,6 +18,7 @@
 
 <p><%=simple_format @article.content %></p>
 
+<div id="related">
 <% if !@related.empty? %>
 	<table>
 		<legend><h3>Related articles</h3></legend>
@@ -39,4 +40,4 @@
 		</tr>
 	</table>
 <% end %>
-
+</div>
