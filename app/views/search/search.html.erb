@@ -5,7 +5,7 @@
 </script>
 
 <h2>Results</h2>
-<% if @articles.empty? %>
+<% if !@articles.empty? %>
 	<table>
 			<% @articles.each do |a| %>
 				<tr>
