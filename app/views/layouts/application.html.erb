@@ -21,9 +21,9 @@
 							<li><a href=""></a></li>
 							<li><a href="">Articles</a>
 								<ul>
-									<li><%= link_to 'Commercial', search_path(:type=>"Commercial")%></li>
-									<li><%= link_to 'Do-It-Yourself', search_path(:type=>"Do-It-Yourself")%></li>
-									<li><%= link_to 'Research', search_path(:type=>"Research")%></li>
+									<li><%= link_to 'Commercial', list_articles_path(:type=>"Commercial")%></li>
+									<li><%= link_to 'Do-It-Yourself', list_articles_path(:type=>"Do-It-Yourself")%></li>
+									<li><%= link_to 'Research', list_articles_path(:type=>"Research")%></li>
 								</ul>
 							</li>
 							<li><a id="search-toggle">Search</a></li>

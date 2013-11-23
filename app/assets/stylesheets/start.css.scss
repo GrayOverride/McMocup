@@ -20,7 +20,7 @@
 }
 
 .navdot{
-	background:white;
+	background:#fc6e51;
  	margin:auto;
  	margin-top:100px;
  	padding:10px;
@@ -39,6 +39,10 @@
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
+}
+
+.navdot img{
+	margin-top:15px;
 }
 
 #startelement-head{

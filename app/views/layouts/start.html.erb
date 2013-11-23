@@ -13,13 +13,6 @@
 			<div class="row-fluid">
 				<div id="startelement-head" class="span12 nav">
 					<div class="span5">
-						<div style="float:left;">
-							<% if current_user %>
-							
-							<% else %>
-							<%= link_to 'Register', register_path, :class=>"btn"%>
-							<% end %>
-						</div>
 					</div>
 					<div id="starlogo" class="span2"><h1>Sunnyside</h1></div>
 					<div class="span5">
@@ -34,13 +27,17 @@
 			<div id="startelement-body" class="row-fluid">
 				<div class="span3"></div>
 				<div class="span2">
-					<div class="navdot"></div>
+				<%= link_to(image_tag("browse.png", :alt => "Browse articles", :title =>"Browse articles"), list_articles_path, :class=>"navdot") %>
+
+					
 				</div>
 				<div class="span2">
-					<div class="navdot"></div>
+				<%= link_to(image_tag("search.png", :alt => "Search articles", :title =>"Search articles"), search_path, :class=>"navdot") %>
+				
 				</div>
 				<div class="span2">
-					<div class="navdot"></div>
+				<%= link_to(image_tag("register.png", :alt => "Register", :title =>"Register"), register_path, :class=>"navdot")  %>
+				
 				</div>
 				<div class="span3"></div>
 			</div>
