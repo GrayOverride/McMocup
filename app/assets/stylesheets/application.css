@@ -22,6 +22,12 @@
  	background: #e9573f; 
  }
 
+ .error-msg{
+ 	margin: 20px auto;
+ 	border: 1px solid #e9573f; 
+ 	padding: 10px;
+ }
+
  .stage{
  	display: block;
  	margin:5px;
