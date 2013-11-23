@@ -1,11 +1,19 @@
 class ArticlesController < ApplicationController
-  before_filter :authenticate, :except => [:show]
+  before_filter :authenticate, :except => [:show, :list]
   before_filter :sidebar
   helper_method :sort_column, :sort_direction
   
   
   def index
     @articles = Article.where("user_id = ?", current_user.id)
+  end
+
+  def list
+    if params[:type].present?
+      @articles = Article.where("type = ?", params[:type]).order("created_at DESC")
+    else
+      @articles = Article.all.order("created_at DESC")
+    end
   end
 
   def show

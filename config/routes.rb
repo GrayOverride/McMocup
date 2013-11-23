@@ -9,6 +9,7 @@ Mockup::Application.routes.draw do
   get "register" => "users#new"
   post "register" => "users#create"
 
+  get "list_articles" => "articles#list"
   resources :users, :articles
 
   root 'start#index'
