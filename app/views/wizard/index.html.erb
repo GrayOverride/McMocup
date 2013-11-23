@@ -6,21 +6,50 @@
 			<p>This is a branching wizard. You will see different steps depending on your answers.</p>
 		</div>
 
-		<div class="step" data-state="color">
-			<p>Which color do you like best?</p>
-			<label for="colorPink"><input type="radio" name="color" value="pink" id="colorPink" />Pink</label>
-			<label for="colorBlue"><input type="radio" name="color" value="blue" id="colorBlue" />Blue</label>
+		<div class="step" data-state="wiz">
+			<p>What is the nature of your search?</p>
+			
+			<label for="wizTypeCom"><input type="radio" name="wiz" value="com" id="wizCom" />Commercial</label>
+			
+			<label for="wizDIY"><input type="radio" name="wiz" value="DIY" id="wizDIY" />DIY</label>
+			
+			<label for="wizResearch"><input type="radio" name="wiz" value="resh" id="wizResh" />Research</label>
 		</div>
 
-		<div class="branch" id="pink">
+		<div class="branch" id="com">
+			
+			<div class="step" data-state="com20">
+				<p>sugen på att sälja?.</p>
+				<label for="wizTypeCom"><input type="radio" name="com20" value="com21" id="wizCom" />Ja för fan!</label>
+				<label for="wizTypeCom"><input type="radio" name="com20" value="com22" id="wizCom" />Neeeeh</label>
+			</div>
+
+					<div class="branch" id="com21">
+						<div class="step" data-state="com21">
+							<p>Do it yourself.</p>
+						</div>
+					</div>
+
+					<div class="branch" id="com22">
+						<div class="step" data-state="com22">
+							<p>Do it fagot.</p>
+						</div>
+					</div>
+					
+
+
+		</div>
+
+		
+		<div class="branch" id="DIY">
 			<div class="step" data-state="end">
-				<p>This is the pink branch.</p>
+				<p>Do it yourself.</p>
 			</div>
 		</div>
 
-		<div class="branch" id="blue">
+		<div class="branch" id="com21">
 			<div class="step" data-state="end">
-				<p>This is the blue branch.</p>
+				<p>Do it yourself.</p>
 			</div>
 		</div>
 
