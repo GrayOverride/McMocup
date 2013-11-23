@@ -18,6 +18,8 @@
  	background:#e9573f; 
  }
 
+ #search-toggle{cursor: pointer;}
+
  .search-toggle-active{
  	background: #e9573f; 
  }
@@ -62,12 +64,10 @@
 	padding: 0 20px;
 	text-decoration: none;
  	line-height: 40px;
- 	color: #fff;
+ 	color: #fff!important;
+ 	text-decoration: none!important;
  }
 
- .btn a{
- 	color: #fff;
- }
 
  .ssubmit{
 	border:5px solid #4fc1e9;
@@ -102,8 +102,12 @@
 	padding:10px;
 }
 
+.sidelabel a:hover{
+	color:#fff;
+}
+
 .sidelabel a{
-	color: #333;
+	color: #fff;
 }
 
 .sidedesc{
@@ -194,10 +198,12 @@ th a{
 
 th a:hover{
 	color:white;
+	cursor: pointer;
 }
 
 th:hover{
 	background:#e9573f;
+
 }
 
 tr:nth-of-type(odd) {
