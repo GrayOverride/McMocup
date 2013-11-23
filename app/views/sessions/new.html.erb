@@ -9,9 +9,11 @@
 	<% end %>
 
 	<% if flash[:notice] %>
-		<%= flash[:notice] %>
+		<p class="error-msg span12">
+			<%= flash[:notice] %>
+		</p>
 	<% end %>
 
-	<p>Not a member? <%= link_to 'sign up now', register_path%></a>.</p>
+	<p>Not a member? <%= link_to 'Sign up now', register_path%></a>.</p>
 </div>
 <div class="span2"></div>
