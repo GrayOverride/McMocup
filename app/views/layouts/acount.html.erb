@@ -15,9 +15,12 @@
 					<div class="span2 offset1">logo</div>
 					<div class="span6">
 						<ul class="navigation">
-							<li><a href="" >Terms of use</a></li>
-							<li><a href="" >About us</a></li>
-							<li><a href="" >Privacy</a></li>
+							<li><%= link_to "Start", root_url %></li>
+							<li><%= link_to "Register", register_path %></li>
+							<li><%= link_to "Login", register_path %></li>
+							<li><%= link_to "Terms of use", static_terms_path %></li>
+							<li><%= link_to "Privacy policy", static_privacy_path %></li>
+							<li><%= link_to "About Us", static_about_path %></li>
 							<div class="clear"></div>
 						</ul>
 					</div>
