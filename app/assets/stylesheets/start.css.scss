@@ -20,10 +20,10 @@
 }
 
 .navdot{
-	background:white;
+	background:#fc6e51;
  	margin:auto;
  	margin-top:100px;
- 	padding:10px;
+ 	padding:20px;
  	width:50px;
  	display:block;
  	height:50px;
@@ -33,12 +33,24 @@
  	box-shadow: 9px 9px 0px rgba(0,0,0,0.2);
 }
 
+.navdot h3{
+	line-height: 50px;
+}
+
+.navdot a{
+	
+}
+
 .navdot:hover{
 	box-shadow:none;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
+}
+
+.navdot img{
+	margin-top:15px;
 }
 
 #startelement-head{
