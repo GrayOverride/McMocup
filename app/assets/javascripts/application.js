@@ -14,3 +14,5 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+//= require jquery.ui.widget
+//= require jquery.wizard.js
