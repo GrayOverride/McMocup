@@ -1,3 +1,48 @@
-// Place all the styles related to the wizard controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.wizard {
+	background-color: #fff;
+	border: #ddd 1px solid;
+	border-radius: 10px;
+	margin: 10px;
+	padding: 10px;
+}
+
+.wizard .wizard-header {
+	background-color: #f4f4f4;
+	border-bottom: #ddd 1px solid;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	padding: 5px 10px;
+	margin: 0 0 10px 0;
+}
+
+.wizard .wizard-step {
+	margin: 10px;
+}
+
+.wiz-navigation {
+	border-top: #ddd 1px solid;
+	margin-top: 10px;
+	padding-top: 10px;
+}
+
+.wiz-navigation ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.wiz-navigation li {
+	float: left;
+	margin-right: 10px;
+}
+
+.clearfix:before, .clearfix:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+.clearfix:after {
+	clear: both;
+}

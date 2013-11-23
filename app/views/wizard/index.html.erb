@@ -1,2 +1,42 @@
-<h1>Wizard#index</h1>
-<p>Find me in app/views/wizard/index.html.erb</p>
+<div id="brancher">
+	<h2>Branching Wizard</h2>
+
+	<form name="brancher">
+		<div class="step">
+			<p>This is a branching wizard. You will see different steps depending on your answers.</p>
+		</div>
+
+		<div class="step" data-state="color">
+			<p>Which color do you like best?</p>
+			<label for="colorPink"><input type="radio" name="color" value="pink" id="colorPink" />Pink</label>
+			<label for="colorBlue"><input type="radio" name="color" value="blue" id="colorBlue" />Blue</label>
+		</div>
+
+		<div class="branch" id="pink">
+			<div class="step" data-state="end">
+				<p>This is the pink branch.</p>
+			</div>
+		</div>
+
+		<div class="branch" id="blue">
+			<div class="step" data-state="end">
+				<p>This is the blue branch.</p>
+			</div>
+		</div>
+
+
+		<div class="step" id="end">
+			<p>Back to the default branch and this wizard is over.</p>
+		</div>
+
+		<div class="wiz-navigation">
+			<ul class="clearfix">
+				<li><button type="button" name="backward" class="backward">Backward</button></li>
+				<li><button type="button" name="forward" class="forward">Forward</button></li>
+			</ul>
+		</div>
+	</form>
+</div>
+
+
+
