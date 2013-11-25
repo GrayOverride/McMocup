@@ -26,6 +26,7 @@ production:
   adapter: postgresql
   encoding: unicode
   database: solsida
+  host: 127.0.0.1
   pool: 5
   username: monty
   password: massekaffe
